@@ -1,4 +1,4 @@
-## These functions create a special "matrix" object that can comput and cache its inverse.
+## These functions create a special "matrix" object that can computes and caches its inverse.
 
 ##creates a special "matrix", which contains functions to:
 ## set the value of the matrix
@@ -19,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
        getinv = getinv)
 }
 
-## Computes the inverse of the special "matrix" returned by makeCacheMatrix 
+## Computes the inverse of the special "matrix" returned by makeCacheMatrix if there is no inverse cached
 cacheSolve <- function(x, ...) {
   
   invM<- x$getinv()
